@@ -128,7 +128,7 @@ jQuery(document).ready(function($){
 
     function initTimer(){
         if($('.timer').length){
-            var target_date = new Date("Sep 30, 2021").getTime()
+            var target_date = new Date("Apr 30, 2022").getTime()
             
             // -------------------
             // var date = new Date();
