@@ -166,9 +166,14 @@ jQuery(document).ready(function ($) {
       var slider1 = $(".product_slider");
 
       slider1.owlCarousel({
-        loop: false,
+        loop: true,
         dots: false,
         nav: false,
+        autoplay: true,
+        autoplayTimeout: 500,
+        autoplayHoverPause: false,
+        smartSpeed: 1000,
+
         responsive: {
           0: { items: 1 },
           480: { items: 2 },
