@@ -1,6 +1,6 @@
-function togglePassword() {
-  let password = document.getElementById("password");
-  let eye = document.getElementById("toggle-eye-login");
+function togglePassword(passwordID, eyeID) {
+  let password = document.getElementById(passwordID);
+  let eye = document.getElementById(eyeID);
 
   if (password.type === "password") {
     password.type = "text";
