@@ -71,8 +71,9 @@
           />
           <span
             toggle="#password-field"
-            id="toggle-eye-signin"
-            onclick="togglePasswordSignin()"
+            id="eye-password"
+            class="fa fa-fw fa-eye field-icon toggle-password eye"
+            onclick="togglePassword('password-signin', 'eye-password')"
           ></span>
         </div>
         <div class="form-group">
@@ -81,14 +82,15 @@
           <input
             type="password"
             class="form-control"
-            name="password"
-            id="password-signin-confirm"
+            name="confirm-password"
+            id="confirm-password"
             placeholder="Sua senha"
           />
           <span
             toggle="#password-field"
-            id="toggle-eye-signin"
-            onclick="togglePasswordSignin()"
+            id="eye-confirm"
+            class="fa fa-fw fa-eye field-icon toggle-password eye"
+            onclick="togglePassword('confirm-password', 'eye-confirm')"
           ></span>
         </div>
         <div class="d-flex flex-row justify-content-center align-items-center">
@@ -102,5 +104,6 @@
         </button>
       </div>
     </div>
+    <script src="js/login.js"></script>
   </body>
 </html>
