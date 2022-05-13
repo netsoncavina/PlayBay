@@ -10,8 +10,8 @@
 // 5.  Init Isotope Filtering
 // 6.  Init Slider
 
-function addToCart(name, image, price) {
-  localStorage.setItem(name, [image, price]);
+function addToCart(type, name, image, price) {
+  localStorage.setItem(type, [name, image, price]);
   updateCartCount();
 }
 
