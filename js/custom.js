@@ -10,6 +10,16 @@
 // 5.  Init Isotope Filtering
 // 6.  Init Slider
 
+function addToCart(name, image, price) {
+  localStorage.setItem(name, [image, price]);
+  updateCartCount();
+}
+
+function updateCartCount() {
+  count = document.getElementById("checkout_items");
+  count.innerHTML = localStorage.length;
+}
+
 jQuery(document).ready(function ($) {
   "user strict";
 
@@ -25,6 +35,7 @@ jQuery(document).ready(function ($) {
   initIsotopeFiltering();
   initTimer();
   initSlider();
+  updateCartCount();
   function initMenu() {
     if (hamburger.length) {
       hamburger.on("click", function () {
