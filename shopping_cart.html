@@ -27,11 +27,56 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/shopping_cart.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <h1>Shopping Cart</h1>
-    <button onclick="showLocalStorage()">botao</button>
+    <div class="text-center">
+      <h1>Shopping Cart</h1>
+    </div>
+    <div class="row">
+      <div class="products">
+        <div class="row item">
+          <img src="./Imagens/jogos/bloodborne.png" />
+          <div class="col info">
+            <h2>Bloodborne</h2>
+            <h4>R$ 50,00</h4>
+          </div>
+        </div>
+        <div class="row item">
+          <img src="./Imagens/jogos/bloodborne.png" />
+          <div class="col info">
+            <h2>Bloodborne</h2>
+            <h4>R$ 50,00</h4>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-center">
+          <h2>Resumo do pedido</h2>
+        </div>
+        
+        <div class="row pedido_info text-center">
+          <div class="col">
+            <h5 class="pedido_item">Bloodborne</h5>
+          </div>
+          <div class="col">
+            <h5 class="pedido_preco">R$ 50,00</h5>
+          </div>
+        </div>
+        <div class="row pedido_info text-center">
+          <div class="col">
+            <h5 class="pedido_item">Frete</h5>
+          </div>
+          <div class="col">
+            <h5 id="frete">R$ 10,00</h5>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-success text-center finalizar">Finalizar Pedido</button>
+        </div>
+    </div>
 
     <script src="js/shoppingCart.js"></script>
   </body>

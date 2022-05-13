@@ -7,5 +7,5 @@ function showLocalStorage() {
     values.push(localStorage.getItem([keys[i]]));
   }
 
-  console.log(values);
+  return values;
 }
