@@ -6,6 +6,10 @@
   --cor-secundaria: rgb(129, 1, 129);
   --cor-secundaria-hover: #d405d4;
   --cor-titulo: rgb(172, 155, 7);
+  --cor-background: rgb(0, 0, 0);
+  --cor-select: rgb(255, 255, 0);
+  --cor-bubble-text: rgb(0, 0, 0);
+  --cor-desconto: #b5aec4;
 }
 /* Fontes */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
@@ -158,10 +162,19 @@ h6 {
   z-index: 10;
 }
 
+.icons {
+  margin-left: 30px;
+}
+
+.theme-icon {
+  font-size: 20px;
+  color: var(--cor-secundaria);
+}
+
 /* Navegação Principal */
 .main_nav_container {
   width: 100%;
-  background: black;
+  background: var(--cor-background);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
 }
 
@@ -218,32 +231,29 @@ h6 {
 
 #nav ul ul {
   display: none;
-  position: absolute; 
+  position: absolute;
   background-color: rgba(44, 44, 44, 0.444);
   padding-left: 30px;
   font-size: 15px;
 }
 /* Display Dropdowns on Hover */
 #nav ul li:hover > ul {
-  display:list-item;
+  display: list-item;
 }
 /* Fisrt Tier Dropdown */
 #nav ul ul li {
-  width:90px;
-  float:none;
+  width: 90px;
+  float: none;
   position: relative;
-  border-bottom:none;
+  border-bottom: none;
 }
-
-
-
 
 .checkout {
   color: var(--cor-primaria);
 }
 
 .checkout a {
-  background: black;
+  background: var(--cor-background);
   border-radius: 50%;
 }
 
@@ -260,7 +270,7 @@ h6 {
   border-radius: 50%;
   background: var(--cor-primaria);
   font-size: 12px;
-  color: black;
+  color: var(--cor-background);
 }
 
 /* Hamburguer */
@@ -431,7 +441,7 @@ h6 {
 }
 
 .red_button:hover {
-  background: var(--cor-primaria);
+  background: var(--cor-select);
 }
 .red_button a:hover {
   color: black;
@@ -447,7 +457,7 @@ h6 {
 .banner {
   width: 100%;
   padding-top: 32px;
-  background-color: black;
+  background-color: var(--cor-background);
 }
 
 .banner_item {
@@ -485,8 +495,9 @@ h6 {
 }
 
 /* Novidades */
+
 .new_arrivals {
-  background-color: black;
+  background-color: var(--cor-background);
   width: 100%;
 }
 
@@ -531,7 +542,7 @@ h6 {
 
 .grid_sorting_button.active {
   color: black;
-  background: var(--cor-primaria);
+  background: var(--cor-select);
 }
 
 .grid_sorting_button.active:hover {
@@ -549,7 +560,7 @@ h6 {
   width: 20%;
   height: 380px;
   cursor: pointer;
-  background-color: black;
+  background-color: var(--cor-background);
 }
 
 .product-item::after {
@@ -587,7 +598,7 @@ h6 {
 
 .product_info {
   /* background-color: white; */
-  background-color: black;
+  background-color: var(--cor-background);
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -620,7 +631,7 @@ h6 {
 .product_price span {
   font-size: 12px;
   margin-left: 10px;
-  color: #b5aec4;
+  color: var(--cor-desconto);
   text-decoration: line-through;
 }
 
@@ -636,7 +647,7 @@ h6 {
 .product_bubble span {
   font-size: 12px;
   font-weight: 600;
-  color: black;
+  color: var(--cor-bubble-text);
 }
 
 .product_bubble_right::after {
@@ -748,7 +759,7 @@ h6 {
 .deal_of_the_week {
   width: 100%;
   padding-top: 10px;
-  background: black;
+  background: var(--cor-background);
 }
 
 .deal_of_the_week_img {
@@ -806,7 +817,7 @@ h6 {
 .timer_num {
   font-size: 48px;
   font-weight: 600;
-  color: var(--cor-primaria);
+  color: var(--cor-titulo);
   margin-top: 10px;
 }
 
@@ -829,7 +840,7 @@ h6 {
 
 /* Best Sellers */
 .best_sellers {
-  background-color: black;
+  background-color: var(--cor-background);
 }
 .product_slider_container {
   width: 100%;
@@ -914,7 +925,7 @@ h6 {
 
 .beneficios {
   padding-top: 74px;
-  background-color: black;
+  background-color: var(--cor-background);
 }
 
 .beneficios_row {
@@ -929,7 +940,7 @@ h6 {
 
 .beneficios_item {
   height: 100px;
-  background: black;
+  background: var(--cor-background);
   /* border-right: solid 1px #ffffff; */
   padding-left: 25px;
 }
@@ -965,7 +976,7 @@ h6 {
 /* Blogs */
 .blogs {
   padding-top: 72px;
-  background-color: black;
+  background-color: var(--cor-background);
 }
 
 .blogs_container {
@@ -1049,7 +1060,7 @@ h6 {
 /* Newsletter */
 .newsletter {
   width: 100;
-  background: black;
+  background: var(--cor-background);
   padding-top: 30px;
 }
 
@@ -1076,7 +1087,7 @@ h6 {
 #newsletter_email {
   width: 300px;
   height: 46px;
-  background: black;
+  background: var(--cor-background);
   border-style: ridge;
   padding-left: 20px;
 }
@@ -1124,7 +1135,7 @@ input[type="email"] {
 
 /* Footer */
 .footer {
-  background-color: black;
+  background-color: var(--cor-background);
 }
 .footer_nav_container {
   height: 130px;

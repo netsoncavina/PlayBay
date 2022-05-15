@@ -20,6 +20,65 @@ function updateCartCount() {
   count.innerHTML = localStorage.length;
 }
 
+function darkTheme() {
+  document.documentElement.style.setProperty(
+    "--cor-primaria",
+    "rgb(255, 255, 0)"
+  );
+  document.documentElement.style.setProperty(
+    "--cor-secundaria",
+    "rgb(129, 1, 129)"
+  );
+  document.documentElement.style.setProperty(
+    "--cor-secundaria-hover",
+    "#d405d4"
+  );
+  document.documentElement.style.setProperty(
+    "--cor-titulo",
+    "rgb(172, 155, 7)"
+  );
+  document.documentElement.style.setProperty(
+    "--cor-bubble-text",
+    "rgb(0, 0, 0)"
+  );
+  document.documentElement.style.setProperty(
+    "--cor-select",
+    "rgb(255, 255, 0)"
+  );
+  document.documentElement.style.setProperty(
+    "--cor-background",
+    "rgb(0, 0, 0)"
+  );
+  document.documentElement.style.setProperty("--cor-desconto", "#b5aec4");
+}
+
+function lightTheme() {
+  document.documentElement.style.setProperty("--cor-primaria", "rgb(0, 0, 0)");
+  document.documentElement.style.setProperty(
+    "--cor-bubble-text",
+    "rgb(255, 255, 0)"
+  );
+  document.documentElement.style.setProperty(
+    "--cor-select",
+    "rgb(255, 255, 0)"
+  );
+  document.documentElement.style.setProperty("--cor-background", "#C3CBD6");
+  document.documentElement.style.setProperty("--cor-desconto", "rgb(0, 0, 0)");
+}
+
+function changeTheme() {
+  const radio1 = document.getElementById("themeRadio1");
+  radio1.addEventListener("click", () => {
+    lightTheme();
+  });
+  const radio2 = document.getElementById("themeRadio2");
+  radio2.addEventListener("click", () => {
+    darkTheme();
+  });
+}
+
+changeTheme();
+
 jQuery(document).ready(function ($) {
   "user strict";
 
@@ -36,6 +95,7 @@ jQuery(document).ready(function ($) {
   initTimer();
   initSlider();
   updateCartCount();
+
   function initMenu() {
     if (hamburger.length) {
       hamburger.on("click", function () {
