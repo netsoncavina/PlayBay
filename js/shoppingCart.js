@@ -79,6 +79,17 @@ function updateTotalPrice() {
   total.innerHTML = `R$ ${getTotalPrice()}`;
 }
 
+function finishOrder() {
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Pedido concluido com sucesso!",
+    showConfirmButton: false,
+    timer: 1500,
+  });
+  localStorage.clear();
+}
+
 addItems();
 addInfos();
 calculateFrete();
