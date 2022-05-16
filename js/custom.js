@@ -50,6 +50,7 @@ function darkTheme() {
     "rgb(0, 0, 0)"
   );
   document.documentElement.style.setProperty("--cor-desconto", "#b5aec4");
+  
 }
 
 function lightTheme() {
@@ -64,6 +65,8 @@ function lightTheme() {
   );
   document.documentElement.style.setProperty("--cor-background", "#C3CBD6");
   document.documentElement.style.setProperty("--cor-desconto", "rgb(0, 0, 0)");
+  document.documentElement.style.setProperty("--cor-desconto", "#b5aec4");
+ 
 }
 
 function changeTheme() {
