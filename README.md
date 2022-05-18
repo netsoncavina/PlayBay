@@ -18,3 +18,4 @@ A pagina provisória pode ser acessada no link: https://netsoncavina.github.io/P
 - [ ] Adicionar pagina para contato;
 - [ ] Melhorar a responsividade;
 - [ ] Melhorias nas imagens dos produtos.
+- [ ] Melhorar acessibilidade
